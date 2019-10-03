@@ -55,3 +55,7 @@ services:
     App\Admin\:
         resource: '../src/Admin'
         tags: ['sulu.admin', {name: 'sulu.context', context: 'admin'}]
+
+    App\Repository\:
+        resource: '../src/Repository'
+        public: true
